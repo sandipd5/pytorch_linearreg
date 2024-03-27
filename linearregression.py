@@ -42,7 +42,7 @@ for epoch in range(num_epochs):
     if (epoch+1)%10 ==0:
         print(f'epoch: {epoch+1},loss = {loss.item():.4f}')
 
-   #plot 
+#plot 
 predicted = model(X).detach().numpy()
 plt.plot(X_numpy,y_numpy,'ro')
 plt.plot(X_numpy,predicted,'b')
