@@ -25,7 +25,7 @@ criterion = nn.MSELoss()
 optimizer = torch.optim.SGD(model.parameters(),lr = learning_rate)
 
 #training loops
-num_epochs = 100
+num_epochs = 200
 for epoch in range(num_epochs):
     #forward pass and loss
     y_predicted = model(X)
